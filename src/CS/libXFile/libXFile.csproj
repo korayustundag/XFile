@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFrameworks>netstandard2.0;net48;net6.0;net7.0</TargetFrameworks>
+    <AssemblyName>libXFile</AssemblyName>
+    <RootNamespace>libXFile</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageId>libXFile</PackageId>
+    <Title>XFile Library</Title>
+    <Version>2.0.0</Version>
+    <Authors>Koray Ustundag</Authors>
+    <Company>Koray USTUNDAG</Company>
+    <Product>XFile</Product>
+    <Copyright>Copyright (C) 2023 Koray Ustundag</Copyright>
+    <PackageProjectUrl>https://github.com/korayustundag/XFile</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>XFile is a C# library for working with binary files that have a specific header. It provides features for reading, writing, and managing these binary files while maintaining the required file format.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/korayustundag/XFile</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>file custom binary management</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
